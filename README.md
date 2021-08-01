@@ -17,6 +17,7 @@ This is a developer resume built using the Next.js framework. it has been styled
 
 Please check out the following link to view my portfolio:
 
+https://liam-volschenk-dev.vercel.app/contact
 
 If you would like to have a look and play with the source code, please download the code from the link above and follow the installation guide below:
 
