@@ -8,14 +8,6 @@ function About() {
 	return (
 		<div className="about-page">
 			<Head>
-				<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNM6HQ1XXV"></script>
-				<script>
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments)}
-					gtag('js', new Date());
-
-					gtag('config', 'G-RNM6HQ1XXV');
-				</script>
 				<title>About</title>
 			</Head>
 
