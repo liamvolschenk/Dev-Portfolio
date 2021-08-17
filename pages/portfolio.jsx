@@ -7,6 +7,14 @@ function Portfolio() {
 	return (
 		<div>
 			<Head>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNM6HQ1XXV"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments)}
+					gtag('js', new Date());
+
+					gtag('config', 'G-RNM6HQ1XXV');
+				</script>
 				<title>Portfolio</title>
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
