@@ -82,7 +82,15 @@ function Portfolio() {
 								<div className="portfolio-category"><a target="blank" href="https://star-wars-api-next-js-app.vercel.app/">Demo</a></div>
 							</div>
 							<div className="portfolio-item">
-								<img src="/next-web.jpg" className="portfolio-image" />
+								<img src="/insurance-web.jpg" className="portfolio-image" />
+
+								<h4 className="portfolio-name">Life-insurance application</h4>
+								<div className="portfolio-category"><a target="blank" href="https://github.com/liamvolschenk/MERN-life-insurance">GitHub Repo</a></div>
+							</div>
+						</div>
+						<div className="portfolio-wrapper next-wrap">
+							<div className="portfolio-item">
+								<img src="/next-web.jpg" className="portfolio-image next-img" />
 
 								<h4 className="portfolio-name">Your next Website?</h4>
 								<div className="portfolio-category"><p>Interested in working together?</p></div>

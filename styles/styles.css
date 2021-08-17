@@ -88,3 +88,12 @@ a[href] {
 	transform: translateY(-50%);
 	margin-left: 20px;
 }
+
+.next-img {
+	width: 480px;
+}
+
+.next-wrap {
+	position: relative;
+	right: 10px;
+}
