@@ -28,9 +28,11 @@ To run this code:
 
   ```cd next.js-portfolio```
 
-* Then run the following to install and start the application:
+* Then run the following to install the necessary modules:
 
    ```npm install```
 
-   ```npm start```
+* Then run the following to run the development server and start the appliction:
+
+   ```npm run dev```
 

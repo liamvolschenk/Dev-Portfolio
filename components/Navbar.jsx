@@ -34,7 +34,8 @@ function Navbar({ router }) {
         }
         
         .container {
-          width: 980px;
+          width: 100%;
+          max-width: 980px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -46,6 +47,7 @@ function Navbar({ router }) {
         .navbar .container {
           display: flex;
           align-items: center;
+          flex-wrap: wrap;
         }
         
         .navbar .logo {
@@ -56,10 +58,24 @@ function Navbar({ router }) {
           text-decoration: none;
         }
         
+        @media screen and (max-width: 1010px){
+          .navbar .logo {
+            padding-left: 20px;
+          }
+        }
+
         .navbar .nav-links {
           display: flex;
           margin-left: auto;
           list-style: none;
+          flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 800px){
+          .navbar .nav-links { 
+            padding: 0;
+            margin: 20px auto;
+          }
         }
         
         .navbar .nav-links .nav-item {
@@ -69,6 +85,14 @@ function Navbar({ router }) {
           margin-right: 20px;
           text-decoration: none;
           transition: opacity 0.3s;
+        }
+
+        @media screen and (max-width: 500px){
+          .navbar .nav-links .nav-item {
+            margin: 0 5px !important;
+            padding: 0;
+            font-size: 14px;
+          }
         }
         
         .navbar .nav-links .nav-item.active {

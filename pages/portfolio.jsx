@@ -21,7 +21,7 @@ function Portfolio() {
 
 			<section className="hero">
 				<div className="container">
-					<div className="text-wrapper w-full">
+					<div className="text-wrapper w-full p-text-wrapper">
 						<h1 className="title">Portfolio</h1>
 						<p className="description">
 							Some projects I have developed
@@ -105,16 +105,24 @@ function Portfolio() {
 				
 				.portfolio-wrapper {
 					display: flex;
+					flex-wrap: wrap;
 					margin-left: -10px;
 					margin-right: -10px;
 					margin-bottom: 20px;
 				}
 				
 				.portfolio-wrapper .portfolio-item {
-					width: 50%;
+					width: calc(50% - 20px);
 					padding-left: 10px;
 					padding-right: 10px;
 					text-align: center;
+				}
+
+				@media screen and (max-width: 600px) {
+					.portfolio-wrapper .portfolio-item { 
+						width: 100%;
+						padding-bottom: 20px;
+					 }
 				}
 				
 				.portfolio-wrapper .portfolio-item .portfolio-image {

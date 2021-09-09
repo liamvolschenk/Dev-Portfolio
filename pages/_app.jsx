@@ -1,4 +1,5 @@
 //importing some extra basic styles from a custom stylesheet
+import '../styles/normalize.css';
 import '../styles/styles.css';
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";

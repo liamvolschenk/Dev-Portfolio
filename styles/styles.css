@@ -12,39 +12,68 @@ a[href] {
 }
 
 .container {
-	width: 980px;
+	width: 100%;
+	max-width: 980px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .hero {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 20px;
+}
+
+@media screen and (max-width: 860px) {
+	.hero {
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
 }
 
 .hero .container {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .hero .home-img {
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 	position: relative;
 	bottom: 40px;
+}
+
+@media screen and (max-width: 860px) {
+	.hero .home-img {
+		position: unset;
+		bottom: 0;
+	}
 }
 
 .hero .text-wrapper {
 	width: 45%;
 }
 
+.hero .text-wrapper.p-text-wrapper {
+	width: 100%;
+}
+
+@media screen and (max-width: 860px) {
+	.hero .text-wrapper {
+		width: 100%;
+	}
+}
+
 .home-text {
 	position: relative;
-	left: 100px;
 	bottom: 70px;
 }
 
-.hero .text-wrapper.w-full {
-	width: 100%;
+@media screen and (max-width: 860px) {
+	.home-text {
+		left: 0;
+		bottom: 0;
+	}
 }
 
 .hero .text-wrapper .title {
@@ -53,9 +82,15 @@ a[href] {
 	margin-bottom: 10px;
 }
 
+@media screen and (max-width: 800px) {
+	.hero .text-wrapper .title {
+		font-size: 36px;
+	}
+}
+
 .hero .text-wrapper .description {
 	font-size: 22px;
-	line-height: 40px;
+	line-height: 30px;
 }
 
 .hero .image-wrapper {
@@ -68,7 +103,6 @@ a[href] {
 }
 
 .contact {
-	position: relative;
 	bottom: 20px;
 }
 
@@ -93,7 +127,104 @@ a[href] {
 	width: 480px;
 }
 
-.next-wrap {
+.skills {
+	padding: 50px 0;
+	width: 100%;
+	max-width: 1000px;
+	background-color: #f6f6f6;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.skills,
+.skills-title {
 	position: relative;
-	right: 10px;
+	bottom: 80px;
+}
+
+@media screen and (max-width: 1010px) {
+	.skills-title {
+		padding: 0 20px
+	}
+}
+
+
+.skills:hover {
+	outline: none;
+	border-color: #d8d8d8;
+	box-shadow: 0 0 8px #d8d8d8;
+}
+
+.skills .column>div {
+	display: inline-block;
+	position: relative;
+}
+
+/*Styling to make the images opacity less*/
+
+.skills .column>div:hover img,
+.skills .column>div:target img {
+	opacity: 35%;
+	transition: opacity .2s ease-in-out;
+}
+
+
+/*Styling to add the text when hovered over*/
+
+.skills .column>div span {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+	top: calc(50% - 18px);
+	z-index: 5;
+	font-size: 18px;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.skills .column>div:hover span {
+	opacity: 1;
+	transition: opacity .2s ease-in-out;
+}
+
+.column img {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.column {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 920px) {
+	.column {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+}
+
+.row-tools {
+	position: relative;
+	top: 35px;
+}
+
+.about-page {
+	background-image: url("/public/aboutbg.jpeg");
+	background-repeat: no-repeat;
+}
+
+.hero .about-text-wrapper {
+	width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+	.hero .a-container {
+		justify-content: flex-end;
+	}
 }

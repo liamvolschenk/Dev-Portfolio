@@ -16,8 +16,8 @@ function About() {
 			<Social />
 
 			<section className="hero about">
-				<div className="container">
-					<div className="text-wrapper w-full">
+				<div className="container a-container">
+					<div className="text-wrapper w-full about-text-wrapper">
 						<div className="about-text">
 							<h1 className="title about-title">About</h1>
 							<p className="description">
@@ -33,18 +33,72 @@ function About() {
 								enjoy.
 							</p>
 						</div>
-						<div className="about-image">
-							<img src="/environment.png" alt="" />
-						</div>
+					</div>
+					<div className="about-image">
+						<img src="/environment.png" alt="" />
 					</div>
 				</div>
 			</section>
+			<div className="skillsntools">
+				<section>
+					<div className="container">
+						<h1 className="title skills-title">Skills</h1>
+						<div className="skills text-wrapper w-full">
+							<div className="row">
+								<div className="column">
+									<div><span>Front-end</span><img src="/frontend.png" alt="frontend" style={{ width: "150px" }} />
+									</div>
+									<div><span>Back-end</span><img src="/backend.png" alt="frontend" style={{ width: "150px" }} />
+									</div>
+									<div><span>Marketing</span><img src="/branding.png" alt="frontend" style={{ width: "150px" }} />
+									</div>
+									<div><span>Design</span><img src="/design.png" alt="frontend" style={{ width: "150px" }} /></div>
+									<div><span>Photography</span><img src="/photography.png" alt="frontend"
+										style={{ width: "150px" }} /></div>
+									<div><span>UI/UX</span><img src="/ux.png" alt="frontend" style={{ width: "150px" }} /></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div className="container">
+						<h1 className="skills-title title">Tools &amp; Technologies</h1>
+						<div className="skills text-wrapper w-full">
+							<div className="row-tools">
+								<div className="column">
+									<div><span>HTML</span><img src="/html.svg" alt="html" style={{ width: "87px" }} /></div>
+									<div><span>CSS</span><img src="/css.svg" alt="css" style={{ width: "87px" }} /></div>
+									<div><span>JavaScript</span><img src="/javascript.svg" alt="JS" style={{ width: "100px" }} /></div>
+									<div><span>jQuery</span><img src="/jquery.png" alt="jquery" style={{ width: "100px" }} /></div>
+									<div><span>React</span><img src="/react.svg" alt="react" style={{ width: "100px" }} /></div>
+									<div><span>Next.js</span><img src="/next.png" alt="next" style={{ width: "100px" }} /></div>
+									<div><span>Express</span><img src="/express.png" alt="express" style={{ width: "105px" }} /></div>
+									<div><span>Node.js</span><img src="/node.png" alt="node" style={{ width: "100px" }} /></div>
+									<div><span>MongoDB</span><img src="/mongo.png" alt="mongo" style={{ width: "100px" }} /></div>
+									<div><span>Bootstrap</span><img src="/bootstrap.svg" alt="bootstrap" style={{ width: "100px" }} /></div>
+									<div><span>Git</span><img src="/git.svg" alt="git" style={{ width: "100px" }} /></div>
+									<div><span>Figma</span><img src="/figma.svg" alt="figma" style={{ width: "80px" }} /></div>
+									<div><span>Photoshop</span><img src="/photoshop.png" alt="photoshop" style={{ width: "100px" }} /></div>
+									<div><span>inDesign</span><img src="/indesign.png" alt="indesign" style={{ width: "100px" }} /></div>
+									<div><span>ProCreate</span><img src="/procreate.png" alt="procreate" style={{ width: "100px" }} /></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 			<style jsx>
 				{`
 				.about-text {
-					position: relative;
 					bottom: 40px;
-					width: 60%;
+					width: calc(100% - 500px);
+				}
+
+				@media screen and (max-width: 950px){
+					.about-text {
+						width: 100%;
+					}
 				}
 				
 				.about-image {
@@ -52,6 +106,12 @@ function About() {
 					right: 0px;
 					top: 160px;
 					z-index: -1;
+				}
+
+				@media screen and (max-width: 950px){
+					.about-image {
+						position: unset;
+					}
 				}
 				`}
 			</style>
